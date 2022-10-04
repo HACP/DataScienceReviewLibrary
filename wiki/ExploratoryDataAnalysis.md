@@ -2,7 +2,7 @@
 
 The purpose of an Exploratory Data Analysis (EDA) is to learn as much as possible from the data in hand and identify relevant information, 
 assess data quality and pinpoint issues, decide feature enginering approach, gather relevant information about potential models and build the
-foundation of the data story. [Link to repo library] (https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/DSRL_EDA.py)
+foundation of the data story. [Link to repo library](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/DSRL_EDA.py)
 
 EDA helps understanding the real problem at hand. Often times, the need for a predictive model is only the surface od a much deeper need. The 
 model can help improve the understanding of the problem. 
