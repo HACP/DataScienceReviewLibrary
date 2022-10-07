@@ -14,6 +14,7 @@ def get_df_summary_basic(df):
 
 def get_entropy(df, col):
     # Objective: Computes Shannon entropy for a given feature
+    # NOTE: This definition works well for discrete distributions - need to formulate a new one for continous distributions
     # Literature: https://en.wikipedia.org/wiki/Entropy_(information_theory)
     # Returns: float number. Positive by definition
     # Test Cases:
@@ -28,6 +29,7 @@ def get_df_summary_entropy(df):
 
 def get_mutual_information(df, col1, col2):
     # Objective: Computes Mutual Information between two given features
+    # NOTE: This definition works well for discrete distributions - need to formulate a new one for continous distributions    
     # Literature: https://en.wikipedia.org/wiki/Mutual_information
     # Returns: float number. Positive by definition
     # Test Cases:
