@@ -33,6 +33,10 @@ def test_get_entropy_gaussian():
     assert abs(0.5*np.log(2*np.pi) + 0.5 - get_entropy(x,p=2,k=5))<0.01
 
 def test_get_mutual_information_multivariate_gaussian():
+    """
+    Test mutual information for two continous distributions - two gaussians distributions and compare against
+    analytical result
+    """
     mean = [0, 0]
     cov = [[1, 0], [0, 100]]
     NN = 50000
