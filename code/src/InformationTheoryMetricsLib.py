@@ -65,7 +65,7 @@ def get_entropy(x,p=2,k=1):
 
     return(h)
 
-def get_mutual_information(x,y,p=2,k=1,method='both'):
+def get_mutual_information_continuous(x,y,p=2,k=1,method='both'):
     """
     Computes the estimated mutual information for two continuous distributions following the
     Kraskov, Stogbauer and Grassberger (KSG) method (PhysRevE.69.066138 - 2014)
@@ -75,9 +75,9 @@ def get_mutual_information(x,y,p=2,k=1,method='both'):
 
     Parameters:
     x:  array-like
-        points in the distribution
+        points in the distribution, continuous
     y:  array-like
-        points in the distribution
+        points in the distribution, continuous
     p:  scalar (p>=1)
         p value of the p-norm.
             p = 1, Manhattan
@@ -88,8 +88,8 @@ def get_mutual_information(x,y,p=2,k=1,method='both'):
     method: 'balls','rectangles' or 'both'
 
     Returns:
-    h:  scalar
-        Approximated entropy for the distribution
+    mi:  scalar
+        Approximated mutual information for the two distributions
     """
 
     # NOTE: do x,y need to be the same size?
@@ -136,11 +136,81 @@ def get_mutual_information(x,y,p=2,k=1,method='both'):
         #raise Exception("Method should be 'balls','rectangles' or 'both'")
         return('Nope')
 
+def get_mutual_information_mixed(x,y,p=2,k=1):
+    """
+    Computes the estimated mutual information for two mixed distributions following the
+    Gao et al (2017)
+    Reference: https://proceedings.neurips.cc/paper/2017/file/ef72d53990bc4805684c9b61fa64a102-Paper.pdf
+    Algorithm 1
 
 
+    Parameters:
+    x:  array-like
+        points in the distribution, continous or discrete
+    y:  array-like
+        points in the distribution, continous or discrete
+    p:  scalar (p>=1)
+        p value of the p-norm.
+            p = 1, Manhattan
+            p = 2, Eucledian
+            p = np.inf, Max
+    k:  scalar
+        k neighbor
 
-x = np.random.randn(10,2)
-y = np.random.randn(10,2)
+    Returns:
+    mi:  scalar
+        Approximated mutual information for the two distributions
+    """
 
-print(get_mutual_information(x,y,p=2,k=1,method='balls'))
-print(get_mutual_information(x,y,p=2,k=1,method='rectangles'))
+    # NOTE: do x,y need to be the same size?
+
+    if len(x.shape) == 2 and len(y.shape) == 2 and x.shape == y.shape:
+        n, d = x.shape
+    else:
+        raise Exception("Input data set should be a 2-dimensional array and same shape")
+
+    if p>=1:
+        log_c_d_p = get_log_volume_ball_d_p(1, d, p)
+    else:
+        #raise Exception("Input p must be p>=1")
+        return('Nope')
+
+    xy = np.c_[x,y]
+
+    tree_x = KDTree(x)
+    tree_y = KDTree(y)
+    tree_xy = KDTree(xy)
+
+    all_distances, indices = tree_xy.query(xy, k + 1, p=p)
+    radii = all_distances[:,-1]
+
+    lnx = np.zeros(n)
+    lny = np.zeros(n)
+    lk = np.zeros(n)
+
+    for i_dim in range(n):
+        if radii[i_dim] == 0:
+            lk[i_dim] = len(tree_xy.query_ball_point(tree_xy.data[i_dim], r=radii[i_dim], p=p)) - 1
+        else:
+            lk[i_dim] = k
+        lnx[i_dim] = len(tree_x.query_ball_point(tree_x.data[i_dim], r=radii[i_dim], p=p)) - 1
+        lny[i_dim] = len(tree_y.query_ball_point(tree_y.data[i_dim], r=radii[i_dim], p=p)) - 1
+
+    mi = np.mean(digamma(lk) + np.log(n) - np.log(lnx+1) - np.log(lny+1))
+
+    return(mi)
+
+"""
+mean = [0, 0]
+cov = [[1, 0], [0, 100]]
+NN = 50000
+x, y = np.random.multivariate_normal(mean, cov, NN).T
+"""
+x = np.array([[0],[1]])
+y = np.array([[0],[1]])
+X = np.random.choice([0,1],size=(1000,1))
+#print(X)
+print(x.shape)
+print(get_mutual_information_continuous(x,y,p=2,k=1,method='balls'))
+print(get_mutual_information_mixed(X,X,p=np.inf,k=5))
+print(np.log(2))
