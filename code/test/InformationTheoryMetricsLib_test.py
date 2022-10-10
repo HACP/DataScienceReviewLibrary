@@ -1,10 +1,6 @@
 from src.InformationTheoryMetricsLib import *
 import pytest
 
-def test_get_entropy_valid_p():
-    x = np.random.normal(size=(100,1))
-    p = -1
-    assert get_entropy(x,p) == 'Nope'
 
 def test_get_log_volume_ball_d_p():
     """
