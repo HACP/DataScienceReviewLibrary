@@ -200,6 +200,33 @@ def get_mutual_information_mixed(x,y,p=2,k=1):
 
     return(mi)
 
+def get_normalized_mutual_information_mixed(x,y,p=2,k=1):
+    """
+    Computes the normalized mutual information as 2*MI(x,y)/(H(x)*H(y))
+    here we leverage the fact that H(x) = MI(x,x) (entropy = self-information)
+    Reference: https://nlp.stanford.edu/IR-book/html/htmledition/evaluation-of-clustering-1.html
+
+    Parameters:
+    x:  array-like
+        points in the distribution, continous or discrete
+    y:  array-like
+        points in the distribution, continous or discrete
+    p:  scalar (p>=1)
+        p value of the p-norm.
+            p = 1, Manhattan
+            p = 2, Eucledian
+            p = np.inf, Max
+    k:  scalar
+        k neighbor
+
+    Returns:
+    nmi:  scalar
+        Approximated normalized mutual information for the two distributions
+    """
+    NMI = 2*get_mutual_information_mixed(x,y,p,k)/(get_mutual_information_mixed(x,x,p,k)*get_mutual_information_mixed(y,y,p,k))
+    return(NMI)
+
+
 """
 mean = [0, 0]
 cov = [[1, 0], [0, 100]]
