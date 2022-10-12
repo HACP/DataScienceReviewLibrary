@@ -226,7 +226,32 @@ def get_normalized_mutual_information_mixed(x,y,p=2,k=1):
     NMI = 2*get_mutual_information_mixed(x,y,p,k)/(get_mutual_information_mixed(x,x,p,k)*get_mutual_information_mixed(y,y,p,k))
     return(NMI)
 
+def get_normalized_information_distance_mixed():
+    """
+    Computes the normalized information distance as 1- MI(x,y)/max(H(x),H(y))
+    here we leverage the fact that H(x) = MI(x,x) (entropy = self-information).
+    This definition is a true metric.
+    Reference:     https://jmlr.csail.mit.edu/papers/volume11/vinh10a/vinh10a.pdf
 
+    Parameters:
+    x:  array-like
+        points in the distribution, continous or discrete
+    y:  array-like
+        points in the distribution, continous or discrete
+    p:  scalar (p>=1)
+        p value of the p-norm.
+            p = 1, Manhattan
+            p = 2, Eucledian
+            p = np.inf, Max
+    k:  scalar
+        k neighbor
+
+    Returns:
+    nmi:  scalar
+        Approximated normalized information distance for the two distributions
+    """
+    NID = 1 - get_mutual_information_mixed(x,y,p,k)/np.max(get_mutual_information_mixed(x,x,p,k),get_mutual_information_mixed(y,y,p,k))
+    return(NID)
 """
 mean = [0, 0]
 cov = [[1, 0], [0, 100]]
