@@ -226,7 +226,7 @@ def get_normalized_mutual_information_mixed(x,y,p=2,k=1):
     NMI = 2*get_mutual_information_mixed(x,y,p,k)/(get_mutual_information_mixed(x,x,p,k)*get_mutual_information_mixed(y,y,p,k))
     return(NMI)
 
-def get_normalized_information_distance_mixed():
+def get_normalized_information_distance_mixed(x,y,p=2,k=1):
     """
     Computes the normalized information distance as 1- MI(x,y)/max(H(x),H(y))
     here we leverage the fact that H(x) = MI(x,x) (entropy = self-information).
