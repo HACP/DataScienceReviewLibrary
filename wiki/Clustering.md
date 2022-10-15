@@ -18,6 +18,9 @@ In the file [InformationTheoryClusteringLib](https://github.com/HACP/DataScience
 - [kMeans](https://github.com/HACP/DataScienceReviewLibrary/blob/3bb07686864836ac485a357dca165e2841206bbf/code/src/InformationTheoryClusteringLib.py#L8): Fast and requires a lot of memory. Well established method, very intutive.
 - [Free energy - entropy](https://github.com/HACP/DataScienceReviewLibrary/blob/3bb07686864836ac485a357dca165e2841206bbf/code/src/InformationTheoryClusteringLib.py#L60): Slow and requires a lot of memory and computing power. Experimental method, exploits connection with Information Theory and physics. TODO: explore optimization and further efficiency of the algorithm. 
 
+### Tesing
+We used a TDD approach to build the library and the tests cases are [here](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/test/InformationTheoryClusteringLib_test.py). Additionally, we explored the approach further in a [juypiter notebook](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/notebooks/Clustering%20kMeans%20Test.ipynb)
+
 ## References
 - [1] https://www.jehps.net/Decembre2008/Bock.pdf
 - [2] https://www.princeton.edu/~wbialek/our_papers/slonim+al_05b.pdf
