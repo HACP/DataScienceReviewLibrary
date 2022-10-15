@@ -24,6 +24,9 @@ I(X,Y) = \sum_{x,y} p(x,y) \log \left( \frac{p(x,y)}{p(x) p(y)} \right)
 ## Contribution of this project
 In the file [InformationTheoryMetricsLib](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/src/InformationTheoryMetricsLib.py), the function [get_entropy](https://github.com/HACP/DataScienceReviewLibrary/blob/ff6177f3950957da302e9e055a6e14ff7e60a3f3/code/src/InformationTheoryMetricsLib.py#L25) computes the entropy of a discrete distribution using the above equation. In the continuous case, we have issues with the binning. To overcome this challenges, we can define entropy as a function of the k-nearest distance. The function [get_mutual_information_mixed](https://github.com/HACP/DataScienceReviewLibrary/blob/ff6177f3950957da302e9e055a6e14ff7e60a3f3/code/src/InformationTheoryMetricsLib.py#L139) solves this issue. It is important to note that I(X;X) = H(X) holds only for discrete distributions.
 
+### Tesing
+We used a TDD approach to build the library and the tests cases are [here](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/test/InformationTheoryMetricsLib_test.py). Additionally, we explored the approach further in a [juypiter notebook](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/notebooks/Mutual%20Information%20Test.ipynb)
+
 
 ## References 
 - [1] https://web.mit.edu/6.933/www/Fall2001/Shannon2.pdf
