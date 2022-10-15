@@ -12,3 +12,10 @@ It is interesting to explore the path or trajectory of the centroids [TODO]
 
 Exploring the mutual information we notice that it starts at a low value and each iteration increases until it reaches a maximum - the entropy of the ground truth-  when the two distributions are the same - MI(X;X) = H(X) 
 ![Example 3: Animation](assets/figures/kMeansAnimated.gif)
+
+## Contribution of this project
+In the file InformationTheoryClusteringLib, we develop two clustering algorithms: 
+- kMeans: Fast and requires a lot of memory. Well established method, very intutive.
+- Free energy - entropy: Slow and requires a lot of memory and computing power. Experimental method, exploits connection with Information Theory and physics. TODO: explore optimization and further efficiency of the algorithm. 
+
+
