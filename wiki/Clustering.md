@@ -14,8 +14,12 @@ Exploring the mutual information we notice that it starts at a low value and eac
 ![Example 3: Animation](assets/figures/kMeansAnimated.gif)
 
 ## Contribution of this project
-In the file InformationTheoryClusteringLib, we develop two clustering algorithms: 
-- kMeans: Fast and requires a lot of memory. Well established method, very intutive.
-- Free energy - entropy: Slow and requires a lot of memory and computing power. Experimental method, exploits connection with Information Theory and physics. TODO: explore optimization and further efficiency of the algorithm. 
+In the file [InformationTheoryClusteringLib](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/src/InformationTheoryClusteringLib.py), we develop two clustering algorithms: 
+- [kMeans](https://github.com/HACP/DataScienceReviewLibrary/blob/3bb07686864836ac485a357dca165e2841206bbf/code/src/InformationTheoryClusteringLib.py#L8): Fast and requires a lot of memory. Well established method, very intutive.
+- [Free energy - entropy](https://github.com/HACP/DataScienceReviewLibrary/blob/3bb07686864836ac485a357dca165e2841206bbf/code/src/InformationTheoryClusteringLib.py#L60): Slow and requires a lot of memory and computing power. Experimental method, exploits connection with Information Theory and physics. TODO: explore optimization and further efficiency of the algorithm. 
+
+## References
+- [1] https://www.jehps.net/Decembre2008/Bock.pdf
+- [2] https://www.princeton.edu/~wbialek/our_papers/slonim+al_05b.pdf
 
 
