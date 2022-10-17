@@ -57,3 +57,5 @@ def test_get_mutual_information_mixed_discrete():
     """
     X = np.random.choice([0,1],size=(10000,1))
     assert abs(np.log(2) - get_mutual_information_mixed(X,X,p=np.inf,k=5)) < 0.001
+
+# Bye Bye Li'l Sebastian - Mouse Rat
