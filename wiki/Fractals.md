@@ -24,7 +24,7 @@ In the file [InformationTheoryClusteringLib](https://github.com/HACP/DataScience
 - [box counting dimension](https://github.com/HACP/DataScienceReviewLibrary/blob/05b8f37e62ddda3d692919f1b1b5d19dc0b72b8a/code/src/InformationTheoryFractalsLib.py#L64): Estimates the fractal dimension using the box counting method. 
 
 ### Tesing
-We used a TDD approach to build the library and the tests cases are [here](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/test/InformationTheoryFractalsLib_test.py). Additionally, we explored the approach further in a [juypiter notebook](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/notebooks/Clustering%20kMeans%20Test.ipynb)
+We used a TDD approach to build the library and the tests cases are [here](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/test/InformationTheoryFractalsLib_test.py). Additionally, we explored the approach further in a [juypiter notebook](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/notebooks/Fractal%20Dimensions%20Test%20Cases.ipynb)
 
 
 ## References
