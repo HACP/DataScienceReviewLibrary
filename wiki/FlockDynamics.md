@@ -6,3 +6,5 @@ In this section we will explore the Vicsek model and how the entropy of the dist
 
 ## References
 [1] https://arxiv.org/pdf/cond-mat/0611743.pdf
+[2] https://www.nature.com/articles/s41598-020-59080-6
+[3] https://www.nature.com/articles/529016a
