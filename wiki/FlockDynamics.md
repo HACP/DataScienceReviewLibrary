@@ -9,6 +9,6 @@ We implemented the Particle Swarm Optimization (PSO): leverage a swarm of partic
 ![Particle Swarm Optimization](assets/figures/PSO.gif)
 
 ## References
-[1] https://arxiv.org/pdf/cond-mat/0611743.pdf
-[2] https://www.nature.com/articles/s41598-020-59080-6
-[3] https://www.nature.com/articles/529016a
+- [1] https://arxiv.org/pdf/cond-mat/0611743.pdf
+- [2] https://www.nature.com/articles/s41598-020-59080-6
+- [3] https://www.nature.com/articles/529016a
