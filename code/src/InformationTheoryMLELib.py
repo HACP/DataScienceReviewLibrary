@@ -1,7 +1,7 @@
 import numpy as np
 from scipy.optimize import minimize
 
-def MLE(LL,data,x0,method):
+def get_MLE(LL,data,x0,method):
     """
     Computes the maximum value for the log-likelihood function and returns the arguments of the parameters.
     Reference: https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2014/4a8de32565ebdefbb7963b4ebda904b2_MIT18_05S14_Reading10b.pdf

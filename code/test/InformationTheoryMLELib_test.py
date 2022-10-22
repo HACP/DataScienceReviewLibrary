@@ -2,8 +2,8 @@ from src.InformationTheoryMLELib import *
 import pytest
 import numpy as np
 
-def test_MLE_gaussian():
-    # performance of optimization methods can vary - 
+def test_get_MLE_gaussian():
+    # performance of optimization methods can vary -
     data = np.random.normal(100,1,size=100000)
 
     def LL_gaussian(log_params,data):
