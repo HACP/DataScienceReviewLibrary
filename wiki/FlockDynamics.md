@@ -6,6 +6,8 @@ In this section we will explore the Vicsek model and how the entropy of the dist
 
 We implemented the Particle Swarm Optimization (PSO): leverage a swarm of particles that share information about local optimal points to find the global optimum. 
 
+![Particle Swarm Optimization](assets/figures/PSO.gif)
+
 ## References
 [1] https://arxiv.org/pdf/cond-mat/0611743.pdf
 [2] https://www.nature.com/articles/s41598-020-59080-6
