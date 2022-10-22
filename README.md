@@ -22,4 +22,8 @@ This repo is intended as a personal review of data science concept connected to 
 ### Clustering: kMeans and Free Energy
 - [wiki](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/Clustering.md)
 - [python library](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/src/InformationTheoryClusteringLib.py) and [tests](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/test/InformationTheoryClusteringLib_test.py)
-- [jupyter notebooks](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/notebooks/Mutual%20Information%20Test.ipynb)
+- [jupyter notebooks](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/notebooks/Clustering%20kMeans%20Test.ipynb)
+### Flock Dynamics: Vicsek Model and Particle Swarm Optimization
+- [wiki](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/FlockDynamics.md)
+- [python library](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/src/InformationTheoryFlockDynamicsLib.py) and [tests](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/test/InformationTheoryFlockDynamics_test.py)
+- [jupyter notebooks](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/notebooks/Flock%20Dynamics%20and%20entropy%20Test.ipynb)
