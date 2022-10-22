@@ -133,3 +133,88 @@ def get_flock_dynamics(N,L,noise_mag,eps,vdt,N_iter):
         plt.axis('off')
         plt.savefig('flock_iteration_' + str(iteration).zfill(10) + '.png')
     os.system('convert -delay 10 -loop 0 flock_iteration_*.png flock_dynamics.gif')
+
+def get_minimum_PSO(objective_function,search_area_center, search_area_scale, NP, v, dt, c1=0.1, c2=0.1, w=0.8, generate_plots=True, eps = 0.01, N_iterations=100):
+    # https://www.cs.tufts.edu/comp/150GA/homeworks/hw3/_reading6%201995%20particle%20swarming.pdf
+    """
+     Estimates minimum value and the arguments for a continuous non-linear function using the particle swarming
+     optimization algorithm.
+     Reference: https://www.cs.tufts.edu/comp/150GA/homeworks/hw3/_reading6%201995%20particle%20swarming.pdf
+                https://machinelearningmastery.com/a-gentle-introduction-to-particle-swarm-optimization/
+
+     Parameters:
+     objective_function: object
+         funtion to be minimized. It should be a numpy function.
+     search_area_center: array
+         center of the (square) area of interest
+     search_area_scale: scalar
+         length of the (square) area of interest
+     NP: scalar
+         number of particles
+     v, dt: scalars
+         velocity and delta t. It can be combined into vdt
+     c1,c2,w: scalars
+         PSO parameters (TODO: explore meaning and further details)
+     generate_plots: boolean
+         True: generates the plots for each iteration (very slow)
+         False: produces only the min and the argument (faster)
+     N_iterations: scalar
+        number of iterations
+     eps: scalar
+         tolerance to change in the best value (TODO: improve early stopping)
+
+     Returns:
+     global_best_objective:  scalar
+         minimum value of teh objective function
+     global_best: array
+         position of minimum value
+     """
+
+    # initializing positions and speeds of particles
+    uP = np.random.uniform(-search_area_scale/2,search_area_scale/2.,size=(NP,2)) + search_area_center
+    vP = v*np.random.randn(NP,2)
+    # computing initial particle and global best values
+    particle_best = uP
+    particle_best_objective = objective_function(uP[:,0],uP[:,1])
+    global_best = particle_best[particle_best_objective.argmin()]
+    global_best_objective = particle_best_objective.min()
+
+    for jj in range(N_iterations):
+        # updating postions and speeds of particles
+        r = np.random.rand(2)
+        vP = w * vP + c1*r[0]*(particle_best - uP) + c2*r[1]*(global_best-uP)
+        uP = uP + vP*dt
+
+        # updating particle and global best values
+        objective = objective_function(uP[:,0], uP[:,1])
+        particle_best[objective <= particle_best_objective] = uP[objective <= particle_best_objective]
+        particle_best_objective = np.array([particle_best_objective, objective]).min(axis=0)
+        #global_best = particle_best[particle_best_objective.argmin()]
+        if np.abs(global_best_objective-particle_best_objective.min()) < eps:
+            print("Early Stop at " + str(jj) + " iterations")
+            return(global_best_objective, global_best)
+        else:
+            global_best_objective = particle_best_objective.min()
+
+        if generate_plots == True:
+            fig, ax = plt.subplots(figsize=(10,10))
+            CS = ax.contour(X, Y, Z)
+            ax.clabel(CS, inline=True, fontsize=10)
+            plt.imshow(Z, extent=[search_area_center[0]-search_area_scale/2,search_area_center[0]+search_area_scale/2,search_area_center[1]-search_area_scale/2,search_area_center[1]+search_area_scale/2], origin='lower', cmap='viridis', alpha=0.5)
+            plt.colorbar()
+            plt.scatter([X_min],[Y_min],marker='*',c='k',s=100)
+            plt.scatter(*(zip(*uP)),c='green')
+            plt.quiver(*(zip(*uP)),*(zip(*vP)) , color='green', width=0.005, angles='xy', scale_units='xy', scale=1)
+            plt.show()
+    if generate_plots == False:
+        fig, ax = plt.subplots(figsize=(10,10))
+        CS = ax.contour(X, Y, Z)
+        ax.clabel(CS, inline=True, fontsize=10)
+        plt.imshow(Z, extent=[search_area_center[0]-search_area_scale/2,search_area_center[0]+search_area_scale/2,search_area_center[1]-search_area_scale/2,search_area_center[1]+search_area_scale/2], origin='lower', cmap='viridis', alpha=0.5)
+        plt.colorbar()
+        plt.scatter([X_min],[Y_min],marker='*',c='k',s=100)
+        plt.scatter(*(zip(*uP)),c='green')
+        plt.quiver(*(zip(*uP)),*(zip(*vP)) , color='green', width=0.005, angles='xy', scale_units='xy', scale=1)
+        plt.show()
+
+    return(global_best_objective, global_best)
