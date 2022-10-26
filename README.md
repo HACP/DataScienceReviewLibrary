@@ -7,6 +7,10 @@ We will use a set of well-known benchmark datasets (e.g [Titanic data set](https
 
 ## Contents
 ### Information Theory - Concepts and applications
+> Can we define a quantity which will measure, in some sense, how much information is “produced” [by such a process], or better, at what rate
+information is produced? [A Mathematical Theory of Communication, Shannon (1948)](https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf)
+
+Data Science leverage models to convert raw data into (actionable) information. How much information is encoded in the data at hand is a great starting question. In this section we introduce the concept of entropy in the context of information theory. Then we discuss the challenges with continuous and mixed distributions and implement a method to estimate entropy and mutual information for mixed distributions. 
 - [wiki](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/InformationTheory.md)
 - [python library](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/src/InformationTheoryMetricsLib.py) and [tests](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/test/InformationTheoryMetricsLib_test.py)
 - [jupyter notebooks](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/notebooks/Mutual%20Information%20Test.ipynb)
