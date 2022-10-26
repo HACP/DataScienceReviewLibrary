@@ -27,3 +27,8 @@ This repo is intended as a personal review of data science concept connected to 
 - [wiki](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/FlockDynamics.md)
 - [python library](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/src/InformationTheoryFlockDynamicsLib.py) and [tests](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/test/InformationTheoryFlockDynamics_test.py)
 - [jupyter notebooks](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/notebooks/Flock%20Dynamics%20and%20entropy%20Test.ipynb)
+### Reinforcement Learning and Networks
+- [wiki](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/ReinforcementLearning.md)
+- [python library](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/src/InformationTheoryQLearningLib.py) and [tests](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/test/InformationTheoryQLearning_test.py)
+- [jupyter notebooks](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/notebooks/Reinforcement%20Learning%20-%20Shortest%20Path%20in%20Network%20Test%20Case.ipynb)
+
