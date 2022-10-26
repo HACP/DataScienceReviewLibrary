@@ -6,6 +6,7 @@ We will use a set of well-known benchmark datasets (e.g [Titanic data set](https
 
 
 ## Contents
+
 ### Information Theory - Concepts and applications
 > Can we define a quantity which will measure, in some sense, how much information is “produced” [by such a process], or better, at what rate
 information is produced? [A Mathematical Theory of Communication, Shannon (1948)](https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf)
@@ -16,7 +17,24 @@ Data Science leverages models to convert raw data into (actionable) information.
 - [jupyter notebooks](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/notebooks/Mutual%20Information%20Test.ipynb)
 
 ### Dimensionality: Volume and surface area of n-balls; Curse of Dimensionality
-> This is the most curious thing I know of in the Wonderland of Higher Space. [Properties of the locus r=constant in space of n dimensions, Heyl (1897)](https://books.google.com/books?id=j5pQAAAAYAAJ&pg=PA38&lpg=PA38&dq=%22We+might+be+pardoned+for+supposing+that+in+a+space+of+infinite+dimension+we+should+find+the+Absolute+and+Unconditioned+if+anywhere,+but+we+have+reached+an+opposite+conclusion.+This+is+the+most+curious+thing+I+know+of+in+the+Wonderland+of+Higher+Space.%22&source=bl&ots=68yeF8EDZu&sig=ACfU3U3A6ISL_MrOXuKCudEHKUmEnR1W7Q&hl=en&sa=X&ved=2ahUKEwirn_HAv_76AhUKkmoFHZD3CA0Q6AF6BAgJEAM#v=onepage&q=%22We%20might%20be%20pardoned%20for%20supposing%20that%20in%20a%20space%20of%20infinite%20dimension%20we%20should%20find%20the%20Absolute%20and%20Unconditioned%20if%20anywhere%2C%20but%20we%20have%20reached%20an%20opposite%20conclusion.%20This%20is%20the%20most%20curious%20thing%20I%20know%20of%20in%20the%20Wonderland%20of%20Higher%20Space.%22&f=false)
+
+#### What de we mean by _dimension_?
+
+In physics, one definition of _degrees of freedom_ for a general mechanical system is the following: 
+> The number of degrees of freedom of a system is the number of independent variables that must be specified to define completely the condition of the system [Reference0](https://www.researchgate.net/publication/239538229_On_the_Computation_of_Degrees-of-Freedom_A_Didactic_Perspective/link/0deec5349199f10f5b000000/download).
+
+A similar concept exists in data science - given a data set and a problem (context), what's the minimum number of independent variables needed to specify completely the system so that we can explain/predict the outcome of a future (unseen) state. 
+
+Often times, we are dealing with a data set with several features, but only a few convey relevant information about the problem in hand. Ideally, we would like to identify the number of degrees of freedom of our system, from the data set. The dimension of the configuration space makes the concept of number of degrees of freedom more precise with the following intuitive notions [Information Dimension and the Probabilistic Structure of Chaos, Farmer (1982)](https://zfn.mpdl.mpg.de/data/Reihe_A/37/ZNA-1982-37a-1304.pdf). 
+
+- Direction, related to the topological dimension 
+- Capacity, related to fractal dimension
+- Measure, related to information dimension.
+
+
+#### Structure of high dimensional spaces
+
+> We might be pardoned for supposing that in a space of infinite dimension we should find the Absolute and Unconditioned if anywhere, but we have reached an opposite conclusion. This is the most curious thing I know of in the Wonderland of Higher Space. [Properties of the locus r=constant in space of n dimensions, Heyl (1897)](https://books.google.com/booksid=j5pQAAAAYAAJ&pg=PA38&lpg=PA38&dq=%22We+might+be+pardoned+for+supposing+that+in+a+space+of+infinite+dimension+we+should+find+the+Absolute+and+Unconditioned+if+anywhere,+but+we+have+reached+an+opposite+conclusion.+This+is+the+most+curious+thing+I+know+of+in+the+Wonderland+of+Higher+Space.%22&source=bl&ots=68yeF8EDZu&sig=ACfU3U3A6ISL_MrOXuKCudEHKUmEnR1W7Q&hl=en&sa=X&ved=2ahUKEwirn_HAv_76AhUKkmoFHZD3CA0Q6AF6BAgJEAM#v=onepage&q=%22We%20might%20be%20pardoned%20for%20supposing%20that%20in%20a%20space%20of%20infinite%20dimension%20we%20should%20find%20the%20Absolute%20and%20Unconditioned%20if%20anywhere%2C%20but%20we%20have%20reached%20an%20opposite%20conclusion.%20This%20is%20the%20most%20curious%20thing%20I%20know%20of%20in%20the%20Wonderland%20of%20Higher%20Space.%22&f=false)
 
 Our intution of dimensions is heavely influenced by our 3-dimensional world. We tend to extrapolate what happens in 1,2 and 3 dimension to higher dimensions and often our intuition is wrong. In this section, we will consider the volume of the unit ball in n dimensions, the ratio of this volume vs the volume of the n dimensional cube that contains it. As we will see, this ratio tends to zero as the dimension increases - most of the volume of the n-cube is located _outside_ the n-ball, as the cube expands the ball shrinks, both at impressive rates. [Reference1](https://www.americanscientist.org/article/an-adventure-in-the-nth-dimension)
 
