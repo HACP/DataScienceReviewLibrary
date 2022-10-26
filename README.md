@@ -1,10 +1,9 @@
-# Data Science and Information Theory Review Library
+# Data Science and Information Theory Review: Down the rabbit hole 
 
-In this repo, we will explore common strategies and tools to attack data science problems from the lense of Information Theory. From exploratory data analysis (EDA), feature engineering, model training, model selection, evaluation, pipeline and story telling, among others, we will explore connections with concepts and practical aspects of Information Theory. 
+This repository is a collection of observations, codes and references from a personal approach to data science from the persective of Information Theory. The process to develop these notes was non-linear, often following a chain of somewhat connected topics related to Information Theory. Many of the techniques, codes and approaches that we employed can be used across different problems. That was the motivation to attempt to write a "library" of functions. From exploratory data analysis (EDA), feature engineering, model training, model selection, evaluation, pipeline and story telling, among others, we will explore connections with concepts and practical aspects of Information Theory. We will explore a few applications in network theory, flowck dynamics, reinforcement learning etc. Real world applications will be highlighted.
 
-We will use the [Titanic data set](https://www.kaggle.com/competitions/titanic) from [Kaggle](https://www.kaggle.com)  as our use case and will build a library of functions in python to streamline the approach. Additionally, a wiki with in-depth explanation of concepts, tools and algorithms will develop some concepts and details further. We will write the librabry following a basic form of Test driven development (TDD) and [pytest](https://docs.pytest.org/en/7.1.x/).
+We will use a set of well-known benchmark datasets (e.g [Titanic data set](https://www.kaggle.com/competitions/titanic) from [Kaggle](https://www.kaggle.com))  to build our use cases and will develop a library of functions in python to streamline the approach. We will write the librabry following a basic form of Test driven development (TDD) and [pytest](https://docs.pytest.org/en/7.1.x/). Additionally, a wiki with in-depth explanation of concepts, tools and algorithms will develop some concepts and details further.
 
-This repo is intended as a personal review of data science concept connected to Information Theory aiming to delvelop a python package that can be reused and expanded over time. 
 
 ## Contents
 ### Information Theory - Concepts and applications
