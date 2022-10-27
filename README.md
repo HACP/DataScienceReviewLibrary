@@ -64,3 +64,8 @@ In this repository we will discuss the volume and area of an n-ball both analyti
 - [python library](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/src/InformationTheoryQLearningLib.py) and [tests](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/test/InformationTheoryQLearning_test.py)
 - [jupyter notebooks](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/notebooks/Reinforcement%20Learning%20-%20Shortest%20Path%20in%20Network%20Test%20Case.ipynb)
 
+## Applications
+### Click Through Rate and Maximum Entropy
+> Despite almost 10 billion ad impressions per day in our dataset, hundreds of millions of unique user ids, millions of unique pages, and millions of unique ads, combined with the lack of easily generalizable features, makes sparsity a significant problem [Simple and Scalable Response Prediction for Display Advertising, Chapelle et al, (2014)](http://wnzhang.net/share/rtb-papers/ctr-chapelle.pdf)
+
+
