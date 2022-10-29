@@ -1,6 +1,10 @@
 # Data Science and Information Theory Review: Down the rabbit hole 
 
+> Knowledge, as justified true belief, is normally seen as resulting from lucky guesses, but optimality provides a sounder basis to epistemology and, therefore, this can be the standard against which the inherent dimensionality of data may be compared [Information theory and dimensionality of space, Kak (2020)](https://www.nature.com/articles/s41598-020-77855-9)
+
 This repository is a collection of observations, codes and references from a personal approach to data science from the persective of Information Theory. The process to develop these notes was non-linear, often following a chain of somewhat connected topics related to Information Theory. Many of the techniques, codes and approaches that we employed can be used across different problems. That was the motivation to attempt to write a "library" of functions. From exploratory data analysis (EDA), feature engineering, model training, model selection, evaluation, pipeline and story telling, among others, we will explore connections with concepts and practical aspects of Information Theory. We will explore a few applications in network theory, flowck dynamics, reinforcement learning etc. Real world applications will be highlighted.
+
+> By considering the event as primary, we can measure its information as related to its frequency: the less likely the event, the information is greater. The logarithm measure associated with information has become widely accepted because it is additive. In other words, additivity of information is the underlying unstated assumption in the information-theoretic approach to structure and since information is related to the experimenter, this constitutes a subject-centered approach to reality. The entropy, or the average information associated with a source, is maximized when the events have the same probability. [Information theory and dimensionality of space, Kak (2020)](https://www.nature.com/articles/s41598-020-77855-9)
 
 We will use a set of well-known benchmark datasets (e.g [Titanic data set](https://www.kaggle.com/competitions/titanic) from [Kaggle](https://www.kaggle.com))  to build our use cases and will develop a library of functions in python to streamline the approach. We will write the librabry following a basic form of Test driven development (TDD) and [pytest](https://docs.pytest.org/en/7.1.x/). Additionally, a wiki with in-depth explanation of concepts, tools and algorithms will develop some concepts and details further.
 
@@ -11,14 +15,16 @@ We will use a set of well-known benchmark datasets (e.g [Titanic data set](https
 > Can we define a quantity which will measure, in some sense, how much information is “produced” [by such a process], or better, at what rate
 information is produced? [A Mathematical Theory of Communication, Shannon (1948)](https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf)
 
-Data Science leverages models to convert raw data into (actionable) information. How much information is encoded in the data at hand is a great starting question. In this section we introduce the concept of entropy in the context of information theory. Then we discuss the challenges with continuous and mixed distributions and implement a method to estimate entropy and mutual information for mixed distributions. 
+Data Science leverages models to convert raw data into (actionable) information. How much information is encoded in the data at hand is a great starting question. In this section we introduce the concept of entropy in the context of information theory. Then we discuss the challenges with continuous and mixed distributions and implement a method to estimate entropy and mutual information for mixed distributions. We consider the relevance matrices, a matrix buitl from the pair-wise mutual information from a data set and explore the behavior for different MI thresholds [link](http://groups.csail.mit.edu/medg/ftp/butte/masters.pdf). 
+
+
 - [wiki](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/InformationTheory.md)
 - [python library](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/src/InformationTheoryMetricsLib.py) and [tests](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/test/InformationTheoryMetricsLib_test.py)
 - [jupyter notebooks](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/notebooks/Mutual%20Information%20Test.ipynb)
 
 ### Dimensionality: Volume and surface area of n-balls; Curse of Dimensionality
 
-#### What de we mean by _dimension_?
+#### What do we mean by _dimension_?
 
 In physics, one definition of _degrees of freedom_ for a general mechanical system is the following: 
 > The number of degrees of freedom of a system is the number of independent variables that must be specified to define completely the condition of the system [Reference0](https://www.researchgate.net/publication/239538229_On_the_Computation_of_Degrees-of-Freedom_A_Didactic_Perspective/link/0deec5349199f10f5b000000/download).
@@ -47,10 +53,15 @@ In this repository we will discuss the volume and area of an n-ball both analyti
 - [wiki](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/Dimensionality.md)
 - [python library](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/src/InformationTheoryDimensionLib.py) and [tests](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/test/InformationTheoryDimensionLib_test.py)
 - [jupyter notebooks](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/notebooks/Dimensionality%20Montecarlo%20Test.ipynb))
+
 ### Fractals: Henon Map and box-counting dimension estimation
+
+> Noninteger dimensions provide explanation for recursion and scale-invariance in complex systems—biological, physical, or engineered—and explain fractal behavior, examples of which include the Mandelbrot set, patterns in Romanesco broccoli, snowflakes, the Nautilus shell, complex computer networks, brain structure, as well as the filament structure and distribution of matter in cosmology. [Information theory and dimensionality of space, Kak (2020)](https://www.nature.com/articles/s41598-020-77855-9)
+
 - [wiki](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/Fractals.md)
 - [python library](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/src/InformationTheoryFractalsLib.py) and [tests](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/test/InformationTheoryFractalsLib_test.py)
 - [jupyter notebooks](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/notebooks/Fractal%20Dimensions%20Test%20Cases.ipynb)
+
 ### Clustering: kMeans and Free Energy
 - [wiki](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/Clustering.md)
 - [python library](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/src/InformationTheoryClusteringLib.py) and [tests](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/test/InformationTheoryClusteringLib_test.py)
