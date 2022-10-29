@@ -15,7 +15,10 @@ We will use a set of well-known benchmark datasets (e.g [Titanic data set](https
 > Can we define a quantity which will measure, in some sense, how much information is “produced” [by such a process], or better, at what rate
 information is produced? [A Mathematical Theory of Communication, Shannon (1948)](https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf)
 
-Data Science leverages models to convert raw data into (actionable) information. How much information is encoded in the data at hand is a great starting question. In this section we introduce the concept of entropy in the context of information theory. Then we discuss the challenges with continuous and mixed distributions and implement a method to estimate entropy and mutual information for mixed distributions. We consider the relevance matrices, a matrix buitl from the pair-wise mutual information from a data set and explore the behavior for different MI thresholds [link](http://groups.csail.mit.edu/medg/ftp/butte/masters.pdf). 
+Data Science leverages models to convert raw data into (actionable) information. How much information is encoded in the data at hand is a great starting question. In this section we introduce the concept of entropy in the context of information theory. Then we discuss the challenges with continuous and mixed distributions and implement a method to estimate entropy and mutual information for mixed distributions. We consider the relevance matrices, a matrix buitl from the pair-wise mutual information from a data set and explore the behavior for different MI thresholds [link](http://groups.csail.mit.edu/medg/ftp/butte/masters.pdf). The animation below shows the change of the relevance matrix for the CTR dataset as we vary the mutual information threshold [more](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/InformationTheory.md)
+
+
+![Relevance Matrix for CTR](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/assets/figures/RelevanceNetworkCTR1.gif)
 
 
 - [wiki](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/InformationTheory.md)
@@ -58,7 +61,7 @@ In this repository we will discuss the volume and area of an n-ball both analyti
 
 > Noninteger dimensions provide explanation for recursion and scale-invariance in complex systems—biological, physical, or engineered—and explain fractal behavior, examples of which include the Mandelbrot set, patterns in Romanesco broccoli, snowflakes, the Nautilus shell, complex computer networks, brain structure, as well as the filament structure and distribution of matter in cosmology. [Information theory and dimensionality of space, Kak (2020)](https://www.nature.com/articles/s41598-020-77855-9)
 
-In this section we will construct an example of a fractal: the Henon Map and we will compute its dimension. Below is an animation of the Henon Map for n*1000 iterations (n=1,1000) [link](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/Fractals.md). 
+In this section we will construct an example of a fractal: the Henon Map and we will compute its dimension. Below is an animation of the Henon Map for n*1000 iterations (n=1,1000) [more](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/Fractals.md). 
 ![Henon Map Animation](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/assets/figures/HenonAnimation.gif)
 
 The link between fractals and information theory is the notion of information dimension: 
