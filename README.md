@@ -58,8 +58,15 @@ In this repository we will discuss the volume and area of an n-ball both analyti
 
 > Noninteger dimensions provide explanation for recursion and scale-invariance in complex systems—biological, physical, or engineered—and explain fractal behavior, examples of which include the Mandelbrot set, patterns in Romanesco broccoli, snowflakes, the Nautilus shell, complex computer networks, brain structure, as well as the filament structure and distribution of matter in cosmology. [Information theory and dimensionality of space, Kak (2020)](https://www.nature.com/articles/s41598-020-77855-9)
 
-In this section we will construct a good example of a fractal: the Henon Map and we will compute its dimension. Below is an animation of the Henon Map for n*1000 iterations (n=1,1000) [link](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/Fractals.md). 
+In this section we will construct an example of a fractal: the Henon Map and we will compute its dimension. Below is an animation of the Henon Map for n*1000 iterations (n=1,1000) [link](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/Fractals.md). 
 ![Henon Map Animation](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/assets/figures/HenonAnimation.gif)
+
+The link between fractals and information theory is the notion of information dimension: 
+> The information dimension, D1, measures the fractal dimension of a probability distribution, and relates the growth of Shannon entropy
+to how the system under study is discretized [A new fractal index to classify forest disturbance and
+anthropogenic change](https://assets.researchsquare.com/files/rs-1934944/v1/3127293a-a750-405a-b427-000c0fb99f94.pdf?c=1660059355)
+
+> The direct physical relevance of the information dimension is in measurement. Knowledge of the information dimension of an attractor allows an observer to estiamte the information gaines when a measurement is made at a given level of precision [Information Dimension and the Probabilistic Structure of Chaos, Farmer (1982)](https://zfn.mpdl.mpg.de/data/Reihe_A/37/ZNA-1982-37a-1304.pdf)
 
 - [wiki](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/Fractals.md)
 - [python library](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/src/InformationTheoryFractalsLib.py) and [tests](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/test/InformationTheoryFractalsLib_test.py)
