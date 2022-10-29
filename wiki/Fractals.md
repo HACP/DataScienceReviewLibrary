@@ -15,6 +15,10 @@ y_{n+1} = b x_n
 After several iterarions the map or attractor looks like this
 ![Henon Map](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/assets/figures/Henon.png)
 
+This is an animation of the Henon Map for n*1000 iterations (n=1,1000)
+![Henon Map Animation](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/assets/figures/HenonAnimation.gif)
+
+
 We can use the box-counting method to estimate the dimension of the attractor 1.26 which reveals the non-interger nature of the fractal dimension.
 ![Henon Map Dimension](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/assets/figures/fractal_dimension.png)
 
