@@ -18,7 +18,7 @@ information is produced? [A Mathematical Theory of Communication, Shannon (1948)
 Data Science leverages models to convert raw data into (actionable) information. How much information is encoded in the data at hand is a great starting question. In this section we introduce the concept of entropy in the context of information theory. Then we discuss the challenges with continuous and mixed distributions and implement a method to estimate entropy and mutual information for mixed distributions. We consider the relevance matrices, a matrix buitl from the pair-wise mutual information from a data set and explore the behavior for different MI thresholds [link](http://groups.csail.mit.edu/medg/ftp/butte/masters.pdf). The animation below shows the change of the relevance matrix for the CTR dataset as we vary the mutual information threshold [more](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/InformationTheory.md)
 
 
-![Relevance Matrix for CTR](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/assets/figures/RelevanceNetworkCTR1.gif)
+![Relevance Matrix for CTR](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/assets/figures/RelevanceNetworkCTR2.gif)
 
 
 - [wiki](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/InformationTheory.md)
