@@ -58,6 +58,9 @@ In this repository we will discuss the volume and area of an n-ball both analyti
 
 > Noninteger dimensions provide explanation for recursion and scale-invariance in complex systems—biological, physical, or engineered—and explain fractal behavior, examples of which include the Mandelbrot set, patterns in Romanesco broccoli, snowflakes, the Nautilus shell, complex computer networks, brain structure, as well as the filament structure and distribution of matter in cosmology. [Information theory and dimensionality of space, Kak (2020)](https://www.nature.com/articles/s41598-020-77855-9)
 
+In this section we will construct a good example of a fractal: the Henon Map and we will compute its dimension. Below is an animation of the Henon Map for n*1000 iterations (n=1,1000) [link](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/Fractals.md). 
+![Henon Map Animation](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/assets/figures/HenonAnimation.gif)
+
 - [wiki](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/Fractals.md)
 - [python library](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/src/InformationTheoryFractalsLib.py) and [tests](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/test/InformationTheoryFractalsLib_test.py)
 - [jupyter notebooks](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/notebooks/Fractal%20Dimensions%20Test%20Cases.ipynb)
