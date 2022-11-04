@@ -102,7 +102,7 @@ In order to facilitate the visualization, we'd like to locate random points that
 
 > Blue noise sample patterns—for example produced by Poisson disk distributions, where all samples are at least distance r apart for some user-supplied density parameter r—are generally considered ideal for many applications in rendering. [Fast Poisson Disk Sampling in Arbitrary Dimensions, Bridson (2007)](https://www.cs.ubc.ca/~rbridson/docs/bridson-siggraph07-poissondisk.pdf)
 
-![Largest Empty Circle Example]()
+![Largest Empty Circle Example](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/assets/figures/LEC.png)
 
 
 ## Applications
