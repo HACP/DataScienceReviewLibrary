@@ -92,6 +92,19 @@ anthropogenic change](https://assets.researchsquare.com/files/rs-1934944/v1/3127
 - [python library](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/src/InformationTheoryQLearningLib.py) and [tests](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/test/InformationTheoryQLearning_test.py)
 - [jupyter notebooks](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/notebooks/Reinforcement%20Learning%20-%20Shortest%20Path%20in%20Network%20Test%20Case.ipynb)
 
+### Largest Empty Circle Problem: Blue Noise and Voronoi Diagrams
+
+Suppose we need to find the location of the next store for a national retail chain withthe condition of being located in the largest area without presence; or suppose we want to locate a waste facility that is as far as possible from current houses. The Largest Empty Circle answers those questions. 
+
+> The largest empty circle (LEC) problem is defined on a set P and consists of finding the largest circle that contains no points in P and is also centered inside the convex hull of P[The Largest Empty Circle Problem, Schuster (2008)](https://www.cs.umd.edu/~mount/Papers/crc05-prox.pdf).
+
+In order to facilitate the visualization, we'd like to locate random points that are not clustered or very close to each other. We use a Possion Disk distribution to simulate a blue noise sample pattern. 
+
+> Blue noise sample patterns—for example produced by Poisson disk distributions, where all samples are at least distance r apart for some user-supplied density parameter r—are generally considered ideal for many applications in rendering. [Fast Poisson Disk Sampling in Arbitrary Dimensions, Bridson (2007)](https://www.cs.ubc.ca/~rbridson/docs/bridson-siggraph07-poissondisk.pdf)
+
+![Largest Empty Circle Example]()
+
+
 ## Applications
 ### Click Through Rate and Maximum Entropy
 > Despite almost 10 billion ad impressions per day in our dataset, hundreds of millions of unique user ids, millions of unique pages, and millions of unique ads, combined with the lack of easily generalizable features, makes sparsity a significant problem [Simple and Scalable Response Prediction for Display Advertising, Chapelle et al, (2014)](http://wnzhang.net/share/rtb-papers/ctr-chapelle.pdf)
