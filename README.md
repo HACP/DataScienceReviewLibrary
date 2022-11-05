@@ -83,10 +83,18 @@ anthropogenic change](https://assets.researchsquare.com/files/rs-1934944/v1/3127
 - [wiki](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/Clustering.md)
 - [python library](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/src/InformationTheoryClusteringLib.py) and [tests](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/test/InformationTheoryClusteringLib_test.py)
 - [jupyter notebooks](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/notebooks/Clustering%20kMeans%20Test.ipynb)
+
 ### Flock Dynamics: Vicsek Model and Particle Swarm Optimization
+> It does not seem a too-large leap of logic to suppose that some same rules underlie animal social behavior,includingherds,schools,andflocks,andthatofhumans. AssociobiologistE.0.Wilson[9] has written, in reference to fish schooling, “In theory at least, individual members of the school can profit from the discoveries and previous experience of al other members of the school during the searchforfood. Thisadvantagecanbecome decisive,outweighingthedisadvantagesof competition for food items, whenever the resource is unpedictably distributed in patches” (p.209). This statement suggeststhat social sharingof informationamong conspeciatesoffers an evolutionaryadvantage:this hypothesiswas fundamentalto the developnmt of particle swarm optimization [Particle Swarm Optimization, Kennedy and Eberhart (1995)](https://www.cs.tufts.edu/comp/150GA/homeworks/hw3/_reading6%201995%20particle%20swarming.pdf). 
+
+> Physicalspaceofcourseaffects informationalinputs, but it is arguably a trivial component of psychologicalexperience. Humans learn to avoid physical co-llision by an early age, h i t navigation of n-dimensional psychosocial space requires and many of us never seemto acquirequitealthe skillswe need [Particle Swarm Optimization, Kennedy and Eberhart (1995)](https://www.cs.tufts.edu/comp/150GA/homeworks/hw3/_reading6%201995%20particle%20swarming.pdf)
+
 - [wiki](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/FlockDynamics.md)
 - [python library](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/src/InformationTheoryFlockDynamicsLib.py) and [tests](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/test/InformationTheoryFlockDynamics_test.py)
 - [jupyter notebooks](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/notebooks/Flock%20Dynamics%20and%20entropy%20Test.ipynb)
+
+
+
 ### Reinforcement Learning and Networks
 - [wiki](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/ReinforcementLearning.md)
 - [python library](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/src/InformationTheoryQLearningLib.py) and [tests](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/test/InformationTheoryQLearning_test.py)
