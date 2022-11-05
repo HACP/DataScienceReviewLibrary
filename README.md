@@ -8,6 +8,8 @@ This repository is a collection of observations, codes and references from a per
 
 We will use a set of well-known benchmark datasets (e.g [Titanic data set](https://www.kaggle.com/competitions/titanic) from [Kaggle](https://www.kaggle.com))  to build our use cases and will develop a library of functions in python to streamline the approach. We will write the librabry following a basic form of Test driven development (TDD) and [pytest](https://docs.pytest.org/en/7.1.x/). Additionally, a wiki with in-depth explanation of concepts, tools and algorithms will develop some concepts and details further.
 
+> Thisalgorithmbelongsideologicallytothatphilosophicalschool that allows wisdom to emerge rather than trying to impose it, that emulates nature rather than trying to control it, and that seeks to make things simpler rather than more complex. Once again nature has provided us with a techniquefor processing informationthat is at once elegant and versatile. [Particle Swarm Optimization, Kennedy and Eberhart (1995)](https://www.cs.tufts.edu/comp/150GA/homeworks/hw3/_reading6%201995%20particle%20swarming.pdf)
+
 
 ## Contents
 
@@ -83,10 +85,20 @@ anthropogenic change](https://assets.researchsquare.com/files/rs-1934944/v1/3127
 - [wiki](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/Clustering.md)
 - [python library](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/src/InformationTheoryClusteringLib.py) and [tests](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/test/InformationTheoryClusteringLib_test.py)
 - [jupyter notebooks](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/notebooks/Clustering%20kMeans%20Test.ipynb)
+
 ### Flock Dynamics: Vicsek Model and Particle Swarm Optimization
+> It does not seem a too-large leap of logic to suppose that some same rules underlie animal social behavior,includingherds,schools,andflocks,andthatofhumans. AssociobiologistE.0.Wilson[9] has written, in reference to fish schooling, “In theory at least, individual members of the school can profit from the discoveries and previous experience of al other members of the school during the searchforfood. Thisadvantagecanbecome decisive,outweighingthedisadvantagesof competition for food items, whenever the resource is unpedictably distributed in patches” (p.209). This statement suggeststhat social sharingof informationamong conspeciatesoffers an evolutionaryadvantage:this hypothesiswas fundamentalto the developnmt of particle swarm optimization [Particle Swarm Optimization, Kennedy and Eberhart (1995)](https://www.cs.tufts.edu/comp/150GA/homeworks/hw3/_reading6%201995%20particle%20swarming.pdf). 
+
+> Physicalspaceofcourseaffects informationalinputs, but it is arguably a trivial component of psychologicalexperience. Humans learn to avoid physical co-llision by an early age, h i t navigation of n-dimensional psychosocial space requires and many of us never seemto acquirequitealthe skillswe need [Particle Swarm Optimization, Kennedy and Eberhart (1995)](https://www.cs.tufts.edu/comp/150GA/homeworks/hw3/_reading6%201995%20particle%20swarming.pdf)
+
+> Holland’s chapter on the “optimum allocation of trials” [5] reveals the delicate balance between conservative testing of known regionsversusriskyexplorationoftheunknown. Itappearsthatthecurrentversionoftheparadigm allocatestrialsnearlyoptimally. Thestochasticfactorsallowthoroughsearchofspacesbetween regions that have been found to be relatively good, and the momentum effect caused by nmhfying the extant velocitiesrather than replacing them results in overshooting,or explorationof unknown regions of the problem domain. [Particle Swarm Optimization, Kennedy and Eberhart (1995)](https://www.cs.tufts.edu/comp/150GA/homeworks/hw3/_reading6%201995%20particle%20swarming.pdf)
+
 - [wiki](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/FlockDynamics.md)
 - [python library](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/src/InformationTheoryFlockDynamicsLib.py) and [tests](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/test/InformationTheoryFlockDynamics_test.py)
 - [jupyter notebooks](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/notebooks/Flock%20Dynamics%20and%20entropy%20Test.ipynb)
+
+
+
 ### Reinforcement Learning and Networks
 - [wiki](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/ReinforcementLearning.md)
 - [python library](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/src/InformationTheoryQLearningLib.py) and [tests](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/test/InformationTheoryQLearning_test.py)
@@ -103,6 +115,8 @@ In order to facilitate the visualization, we'd like to locate random points that
 > Blue noise sample patterns—for example produced by Poisson disk distributions, where all samples are at least distance r apart for some user-supplied density parameter r—are generally considered ideal for many applications in rendering. [Fast Poisson Disk Sampling in Arbitrary Dimensions, Bridson (2007)](https://www.cs.ubc.ca/~rbridson/docs/bridson-siggraph07-poissondisk.pdf)
 
 ![Largest Empty Circle Example](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/assets/figures/LEC.png)
+
+![Voronoi Example](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/assets/figures/Voronoi_Animation.gif)
 
 
 ## Applications
