@@ -104,6 +104,8 @@ In order to facilitate the visualization, we'd like to locate random points that
 
 ![Largest Empty Circle Example](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/assets/figures/LEC.png)
 
+![Voronoi Example](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/assets/figures/Voronoi_Animation.gif)
+
 
 ## Applications
 ### Click Through Rate and Maximum Entropy
