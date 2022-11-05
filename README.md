@@ -89,6 +89,10 @@ anthropogenic change](https://assets.researchsquare.com/files/rs-1934944/v1/3127
 ### Flock Dynamics: Vicsek Model and Particle Swarm Optimization
 > It does not seem a too-large leap of logic to suppose that some same rules underlie animal social behavior,includingherds,schools,andflocks,andthatofhumans. AssociobiologistE.0.Wilson[9] has written, in reference to fish schooling, “In theory at least, individual members of the school can profit from the discoveries and previous experience of al other members of the school during the searchforfood. Thisadvantagecanbecome decisive,outweighingthedisadvantagesof competition for food items, whenever the resource is unpedictably distributed in patches” (p.209). This statement suggeststhat social sharingof informationamong conspeciatesoffers an evolutionaryadvantage:this hypothesiswas fundamentalto the developnmt of particle swarm optimization [Particle Swarm Optimization, Kennedy and Eberhart (1995)](https://www.cs.tufts.edu/comp/150GA/homeworks/hw3/_reading6%201995%20particle%20swarming.pdf). 
 
+In the animation below, we can see the particle swarm optimization algorithm at work, finidn the minimum point in a non-linear, continuous 2D surface. WE can see how the particles start in a random configuration and as they collect the particle best and share them to find the global best after a few iterations the swarm lands very close to the optimal value. 
+
+![PSO](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/assets/figures/PSO.gif)
+
 > Physicalspaceofcourseaffects informationalinputs, but it is arguably a trivial component of psychologicalexperience. Humans learn to avoid physical co-llision by an early age, h i t navigation of n-dimensional psychosocial space requires and many of us never seemto acquirequitealthe skillswe need [Particle Swarm Optimization, Kennedy and Eberhart (1995)](https://www.cs.tufts.edu/comp/150GA/homeworks/hw3/_reading6%201995%20particle%20swarming.pdf)
 
 > Holland’s chapter on the “optimum allocation of trials” [5] reveals the delicate balance between conservative testing of known regionsversusriskyexplorationoftheunknown. Itappearsthatthecurrentversionoftheparadigm allocatestrialsnearlyoptimally. Thestochasticfactorsallowthoroughsearchofspacesbetween regions that have been found to be relatively good, and the momentum effect caused by nmhfying the extant velocitiesrather than replacing them results in overshooting,or explorationof unknown regions of the problem domain. [Particle Swarm Optimization, Kennedy and Eberhart (1995)](https://www.cs.tufts.edu/comp/150GA/homeworks/hw3/_reading6%201995%20particle%20swarming.pdf)
@@ -100,6 +104,10 @@ anthropogenic change](https://assets.researchsquare.com/files/rs-1934944/v1/3127
 
 
 ### Reinforcement Learning and Networks
+> Q-learning (Watkins, 1989) is a simple way for agents to learn how to act optimally in controlled Markovian domains. It amounts to an incremental method for dynamic programming which imposes limited computational demands. It works by successively improving its evaluations of the quality of particular actions at particular states [Q-Learning, Watkins and Dayan, 1992](https://link.springer.com/content/pdf/10.1007/BF00992698.pdf)
+
+![Maze Path RL](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/assets/figures/Maze_Path_Animation.gif)
+
 - [wiki](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/ReinforcementLearning.md)
 - [python library](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/src/InformationTheoryQLearningLib.py) and [tests](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/test/InformationTheoryQLearning_test.py)
 - [jupyter notebooks](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/notebooks/Reinforcement%20Learning%20-%20Shortest%20Path%20in%20Network%20Test%20Case.ipynb)
