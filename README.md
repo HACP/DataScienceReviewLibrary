@@ -129,7 +129,12 @@ In order to facilitate the visualization, we'd like to locate random points that
 ### Levenshtein Distance and word paths
 > [For those channels] by analogy to the combinatorial problem of construction optimal codes capable of correcting s reversals, we will consider the problem of construction optimal codes capable of correcting deletions, insertions, and reversals. [Binary Codes Capable of Correcting Deletions, Insertions and Reversals. Leveinshten (1966)](https://bibbase.org/network/publication/levenshtein-binarycodescapableofcorrectingdeletionsinsertionsandreversals-1966)
 
+In this example we will consider a corpus of words in the english language and compute the Levenshtein distance to build word paths from a source word to a target words. Each move from word to word corresponds to a insertion a delation or a reversal (exchange). Below we see a representation of the word network revealing a central cluster of connected words and an outer ring of disconnected words. 
+
 ![Word Path Example](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/assets/figures/WordPath_well_to_john.gif)
+
+The animation shows a path between the word well and the word john. For this particular case, we see only exhanges since all words have the same length.
+![Word Network](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/assets/figures/WordNetwork_4_log12.png)
 
 ## Applications
 ### Click Through Rate and Maximum Entropy
