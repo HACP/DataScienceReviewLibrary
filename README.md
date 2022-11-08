@@ -126,6 +126,10 @@ In order to facilitate the visualization, we'd like to locate random points that
 
 ![Voronoi Example](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/assets/figures/Voronoi_Animation.gif)
 
+### Levenshtein Distance and word paths
+> [For those channels] by analogy to the combinatorial problem of construction optimal codes capable of correcting s reversals, we will consider the problem of construction optimal codes capable of correcting deletions, insertions, and reversals. [Binary Codes Capable of Correcting Deletions, Insertions and Reversals. Leveinshten (1966)](https://bibbase.org/network/publication/levenshtein-binarycodescapableofcorrectingdeletionsinsertionsandreversals-1966)
+
+![Word Path Example](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/assets/figures/WordPath_well_to_john.gif)
 
 ## Applications
 ### Click Through Rate and Maximum Entropy
