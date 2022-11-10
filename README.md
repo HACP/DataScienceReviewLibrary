@@ -136,6 +136,9 @@ In this example we will consider a corpus of words in the english language and c
 The animation shows a path between the word well and the word john. For this particular case, we see only exhanges since all words have the same length.
 ![Word Network](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/assets/figures/WordNetwork_4_log12.png)
 
+We have used a multidimensional scaling to represent the words from the entire corpus and the path from source to target. 
+![Word MDS](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/assets/figures/WordMDS_4_log12.png)
+
 ## Applications
 ### Click Through Rate and Maximum Entropy
 > Despite almost 10 billion ad impressions per day in our dataset, hundreds of millions of unique user ids, millions of unique pages, and millions of unique ads, combined with the lack of easily generalizable features, makes sparsity a significant problem [Simple and Scalable Response Prediction for Display Advertising, Chapelle et al, (2014)](http://wnzhang.net/share/rtb-papers/ctr-chapelle.pdf)
