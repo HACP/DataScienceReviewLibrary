@@ -136,6 +136,9 @@ In this example we will consider a corpus of words in the english language and c
 The animation shows a path between the word well and the word john. For this particular case, we see only exhanges since all words have the same length.
 ![Word Network](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/assets/figures/WordNetwork_4_log12.png)
 
+> The problem of multidimensional scaling, broadly stated, is to find n points whose interpoint distances match in some sense the experimental dissimilarities of n objects. Instead of dissimilarities the experimental measurements may be similarities, confusion probabilities, interaction rates between groups, correlation coefficients, or other measures of proximity or dissociation of the most diverse kind. Whether a large value implies closeness or its opposite is a detail and has no essential significance. What is essential is that we desire a monotone relationship, either ascending or descending, between the experimental measurements and distances in the configuration [MULTIDIMENSIONAL SCALING BY OPTIMIZING GOODNESS
+OF FIT TO A NONMETRIC HYPOTHESIS, Kruskal (1964)](http://cda.psych.uiuc.edu/psychometrika_highly_cited_articles/kruskal_1964a.pdf)
+
 We have used a multidimensional scaling to represent the words from the entire corpus and the path from source to target. 
 ![Word MDS](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/assets/figures/WordMDS_4_log12.png)
 
