@@ -33,6 +33,8 @@ The model parameters are:
 ## Maximum Likelihood Estimation
 Our model's parameter set ultimately reduces to $r, \alpha, a, b$ and we can estimate this set from the experimental data using the [Maximum Likelihood Estimation](https://en.wikipedia.org/wiki/Maximum_likelihood_estimation). The idea is to find the parameters that under the assumed statistical model the oberved data is most probable. Equations 6 and 7 in [Faber2005] provide the nessary equations to compute the log-likelihood. We can the use any standard optimization method to find the parameters that maximize the log-likelihood (e.g. Scipy optimization package) 
 
+Out of the 14 available optimizers, 9 did not need a Jacobian (not provided). Out of the 9, one (BFGS) gave a False successful flag with values within range and two (TNC, SLSQP) gave a True successful Flag but the numbers are completely off from the range. 
+
 ## Data and Preprocessing
 In this project we will use the same dataset described in [Faber2005] the CDNOW small data set. The data contains information about sales at the customer level (anonimized), the date of the transaction, and the quantity/total price of the purchase. The data was collected from January 1997 through June 1998 and we will focus on the first 39 weeks. We have a total of 6919 corresponding to 2357 unique customers. 
 
@@ -51,4 +53,12 @@ We will transform the Data field from string to pandas date object. The key vara
 * t: time of the last transaction (recency)
 
 Note that if x = 0 then t = 0
+
+## Discussion - Interpretability vs Accuracy
+
+The generic form of the Interpretability vs Accuracy Trade-off says that in general more powerful models (accuracy wise) are less likely to provide clear explanations of their results. 
+
+In this case we are using sound assumptions to build our model from first principles. 
+- Do we trust the model?
+- Do we trust the predictions?
 
