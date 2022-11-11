@@ -35,6 +35,8 @@ Our model's parameter set ultimately reduces to $r, \alpha, a, b$ and we can est
 
 Out of the 14 available optimizers, 9 did not need a Jacobian (not provided). Out of the 9, one (BFGS) gave a False successful flag with values within range and two (TNC, SLSQP) gave a True successful Flag but the numbers are completely off from the range. 
 
+can we use the different optimization methods as way to find the mean and std of the parameters? 
+
 ## Data and Preprocessing
 In this project we will use the same dataset described in [Faber2005] the CDNOW small data set. The data contains information about sales at the customer level (anonimized), the date of the transaction, and the quantity/total price of the purchase. The data was collected from January 1997 through June 1998 and we will focus on the first 39 weeks. We have a total of 6919 corresponding to 2357 unique customers. 
 
