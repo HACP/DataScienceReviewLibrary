@@ -58,7 +58,7 @@ Note that if x = 0 then t = 0
 
 The generic form of the Interpretability vs Accuracy Trade-off says that in general more powerful models (accuracy wise) are less likely to provide clear explanations of their results. 
 
-In this case we are using sound assumptions to build our model from first principles. 
-- Do we trust the model?
-- Do we trust the predictions?
+Two important questions to consider were discussed in [“Why Should I Trust You?” Explaining the Predictions of Any Classifier, Ribeiro (2016)](https://arxiv.org/pdf/1602.04938.pdf)
+- Do we trust the model? In this case we are using sound assumptions to build our model from first principles. Does it guarantee trust? No.
+- Do we trust the predictions? TBD
 
