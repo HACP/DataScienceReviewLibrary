@@ -105,6 +105,8 @@ In the animation below, we can see the particle swarm optimization algorithm at 
 
 > Ant Colony Optimization algorithms, that is, instance of the ACO metaheuritics (...) use a population of ants to collectively solve the optimization problem under consideration (...). Information collected by the ants during the search process is stored in pheromone trails $\tau_{i,j}$ associated to connections $l_{i,j}$. Pheromone trails encode a long-term memory about the whole ant search process. [Anto Colony Optimization: A new Metaheuristic Dorigo and Dicaro (1999)](http://staff.washington.edu/paymana/swarm/dorigo99-cec.pdf)
 
+The animation below, shows a toy model of the problem, with two nodes and two paths of different lengths. The ants will choose a path based on a probability distribution propotional to the value of $tau$ for that edge. After all the ants have finished their tours, we update the values of $tau$ by a term that is inversely proportional to the path length. At the begining of the experiment, we can see how ants will pick one path randomly and over time they prefer the shortest path.  
+
 ![ACO toy model](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/assets/figures/ACO_toymodel_2.gif)
 - [notebook](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/notebooks/Ant%20Colony%20-%20Simulations.ipynb)
 
