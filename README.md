@@ -93,15 +93,20 @@ In the animation below, we can see the particle swarm optimization algorithm at 
 
 ![PSO](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/assets/figures/PSO.gif)
 
-> Physicalspaceofcourseaffects informationalinputs, but it is arguably a trivial component of psychologicalexperience. Humans learn to avoid physical co-llision by an early age, h i t navigation of n-dimensional psychosocial space requires and many of us never seemto acquirequitealthe skillswe need [Particle Swarm Optimization, Kennedy and Eberhart (1995)](https://www.cs.tufts.edu/comp/150GA/homeworks/hw3/_reading6%201995%20particle%20swarming.pdf)
+> Physical space of course affects informational inputs, but it is arguably a trivial component of psychological experience. Humans learn to avoid physical collision by an early age, navigation of n-dimensional psychosocial space requires and many of us never seem to acquire quite al the skills we need [Particle Swarm Optimization, Kennedy and Eberhart (1995)](https://www.cs.tufts.edu/comp/150GA/homeworks/hw3/_reading6%201995%20particle%20swarming.pdf)
 
-> Holland’s chapter on the “optimum allocation of trials” [5] reveals the delicate balance between conservative testing of known regionsversusriskyexplorationoftheunknown. Itappearsthatthecurrentversionoftheparadigm allocatestrialsnearlyoptimally. Thestochasticfactorsallowthoroughsearchofspacesbetween regions that have been found to be relatively good, and the momentum effect caused by nmhfying the extant velocitiesrather than replacing them results in overshooting,or explorationof unknown regions of the problem domain. [Particle Swarm Optimization, Kennedy and Eberhart (1995)](https://www.cs.tufts.edu/comp/150GA/homeworks/hw3/_reading6%201995%20particle%20swarming.pdf)
+> Holland’s chapter on the “optimum allocation of trials” [5] reveals the delicate balance between conservative testing of known regions versus risky exploration of the unknown. It appears that the current version of the paradigm allocates trials nearly optimally. The stochastic factors allow thorough search of spaces between regions that have been found to be relatively good, and the momentum effect caused by nmhfying the extant velocities rather than replacing them results in overshooting,or exploration of unknown regions of the problem domain. [Particle Swarm Optimization, Kennedy and Eberhart (1995)](https://www.cs.tufts.edu/comp/150GA/homeworks/hw3/_reading6%201995%20particle%20swarming.pdf)
 
 - [wiki](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/FlockDynamics.md)
 - [python library](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/src/InformationTheoryFlockDynamicsLib.py) and [tests](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/test/InformationTheoryFlockDynamics_test.py)
 - [jupyter notebooks](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/notebooks/Flock%20Dynamics%20and%20entropy%20Test.ipynb)
 
+### Ant Colony Optimization
 
+> Ant Colony Optimization algorithms, that is, instance of the ACO metaheuritics (...) use a population of ants to collectively solve the optimization problem under consideration (...). Information collected by the ants during the search process is stored in pheromone trails $\tau_{i,j}$ associated to connections $l_{i,j}$. Pheromone trails encode a long-term memory about the whole ant search process. [Anto Colony Optimization: A new Metaheuristic Dorigo and Dicaro (1999)](http://staff.washington.edu/paymana/swarm/dorigo99-cec.pdf)
+
+![ACO toy model](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/assets/figures/ACO_toymodel_2.gif)
+- [notebook](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/notebooks/Ant%20Colony%20-%20Simulations.ipynb)
 
 ### Reinforcement Learning and Networks
 > Q-learning (Watkins, 1989) is a simple way for agents to learn how to act optimally in controlled Markovian domains. It amounts to an incremental method for dynamic programming which imposes limited computational demands. It works by successively improving its evaluations of the quality of particular actions at particular states [Q-Learning, Watkins and Dayan, 1992](https://link.springer.com/content/pdf/10.1007/BF00992698.pdf)
