@@ -146,6 +146,7 @@ We have used a multidimensional scaling to represent the words from the entire c
 ### Customer Lifetime Value - BG/NBD model
 We employ maximum likelihood estimation (MLE) to find the parameters that best fit a model built from first principles that describes the probability of purchase for a Recency and Frequency model. The model is a combination of a beta-gemoetric and negative binomial distributions, with exact and analitically explicit equations. The model is highly interpretable with acceptable accuracy (~2% total forecast) 
 [wiki](https://github.com/HACP/DataScienceReviewLibrary/blob/main/wiki/CLV_BG_NBD_model.md)
+[notebook](https://github.com/HACP/DataScienceReviewLibrary/blob/main/code/notebooks/CLT%20-%20BG%20NBD%20Model.ipynb)
 
 ### Click Through Rate and Maximum Entropy
 > Despite almost 10 billion ad impressions per day in our dataset, hundreds of millions of unique user ids, millions of unique pages, and millions of unique ads, combined with the lack of easily generalizable features, makes sparsity a significant problem [Simple and Scalable Response Prediction for Display Advertising, Chapelle et al, (2014)](http://wnzhang.net/share/rtb-papers/ctr-chapelle.pdf)
